@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\Module2.exe
+C:\Users\admin\Source\Repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\Module2.deps.json
+C:\Users\admin\Source\Repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\Module2.runtimeconfig.json
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\Module2.dll
+C:\Users\admin\Source\Repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\ref\Module2.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\Module2.pdb
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\Module2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\Module2.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\Module2.AssemblyInfo.cs
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\Module2.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\Module2.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\ref\Module2.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\Module2.pdb
+C:\Users\admin\Source\Repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\Module2.genruntimeconfig.cache
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\Module2.csproj.AssemblyReference.cache

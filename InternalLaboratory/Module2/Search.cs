@@ -30,5 +30,33 @@ namespace Module2
             
             return currentMax;
         }
+
+        /// <summary>
+        /// Задание 3: Реализовать алгоритм поиска в вещественном массиве индекса элемента, для которого сумма элементов слева и сумма элементов спарава равны. Если такого элемента не существует вернуть null (или -1).
+        /// </summary>
+        public static int SymmetryCenter(double[] a)
+        {
+            double sumOnTheRight = 0;
+            double sumOnTheLeft = a[0];
+
+            for (int i = 1; i < a.Length; i++)
+            {
+                sumOnTheRight += a[i];
+            }
+
+            for (int i = 1; i < a.Length - 1; i++)
+            {                
+                sumOnTheRight -= a[i];
+
+                if (sumOnTheLeft == sumOnTheRight)
+                {
+                    return i;
+                }
+
+                sumOnTheLeft += a[i];
+            }
+
+            return -1;
+        }
     }
 }
