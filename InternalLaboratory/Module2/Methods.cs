@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Module2
 {
-    static class Methods
+    public static class Methods
     {
         /// <summary>
         /// Задание 2: Реализовать рекурсивный алгоритм поиска максимального элемента в неотсортированном целочисленом массиве.
@@ -94,35 +94,59 @@ namespace Module2
         public static int FindNextBiggerNumber(int n)
         {
             char[] arrayOfDigitChars = n.ToString().ToCharArray();
+            int result = -1;
 
             if (arrayOfDigitChars.Length == 1)
             {
-                return -1;
+                return result;
             }
 
-            for (int i = 0; i < arrayOfDigitChars.Length; i++)
+            for (int i = arrayOfDigitChars.Length - 2; i >= 0; i--)
             {
-                for (int j = i + 1; j < arrayOfDigitChars.Length; j++)
+                for (int j = i; j >= 0; j--)
                 {
-                    if (arrayOfDigitChars[i].CompareTo(arrayOfDigitChars[j]) < 0)
+                    if (arrayOfDigitChars[j].CompareTo(arrayOfDigitChars[j + 1]) < 0)
                     {
-                        char temp = arrayOfDigitChars[i];
-                        arrayOfDigitChars[i] = arrayOfDigitChars[j];
+                        char temp = arrayOfDigitChars[j + 1];
+                        arrayOfDigitChars[j + 1] = arrayOfDigitChars[j];
                         arrayOfDigitChars[j] = temp;
+
+                        arrayOfDigitChars = SortCharArrayAfterIndex(arrayOfDigitChars, j + 1);
+
+                        string s = new string(arrayOfDigitChars);
+                        int.TryParse(s, out result);
+
+                        if (result == n)
+                        {
+                            return -1;
+                        }
+
+                        return result;
                     }
                 }
             }
 
-            int result = -1;
-            string s = new string(arrayOfDigitChars);
-            int.TryParse(s, out result);
-            
-            if (result == n)
+            return result;
+        }
+
+        private static char[] SortCharArrayAfterIndex(char[] a, int index)
+        {
+            int n = 2;
+
+            for (int i = index; i <= a.Length - n; n++)
             {
-                return -1;
+                for (int j = i; j <= a.Length - n; j++)
+                {
+                    if (a[j].CompareTo(a[j + 1]) > 0)
+                    {
+                        char temp = a[j + 1];
+                        a[j + 1] = a[j];
+                        a[j] = temp;
+                    }
+                }
             }
 
-            return result;
+            return a;
         }
     }
 }

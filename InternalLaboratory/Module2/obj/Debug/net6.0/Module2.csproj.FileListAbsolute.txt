@@ -13,3 +13,11 @@ C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\obj\De
 C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\Module2.pdb
 C:\Users\admin\Source\Repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\Module2.genruntimeconfig.cache
 C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\Module2.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\NUnit3.TestAdapter.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\NUnit3.TestAdapter.pdb
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\nunit.engine.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\nunit.engine.api.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\nunit.engine.core.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\testcentric.engine.metadata.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\nunit.framework.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\Module2.csproj.CopyComplete

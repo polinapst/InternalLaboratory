@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Y0fIthIyuaOTz5ftA94pUGST+zaf1z+TAxRlyGfYnRJQEm6E9gZiMSsPaqZYWUraXTVkRIy9j/Oq/rPdxpC7bQ==",
+  "dgSpecHash": "6kkRQlafelbCYrpNU/dqlmBqj/ZAmOugZWqpsJb7I5nuqFcYgWF97ocoUwxYvTf9XebJFcRypAu6UCDeTKmL4w==",
   "success": true,
   "projectFilePath": "C:\\Users\\admin\\source\\repos\\InternalLaboratory\\InternalLaboratory\\Module2\\Module2.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\nunit3testadapter\\4.2.1\\nunit3testadapter.4.2.1.nupkg.sha512"
+  ],
   "logs": []
 }
