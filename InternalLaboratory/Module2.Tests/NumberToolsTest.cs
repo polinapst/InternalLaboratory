@@ -3,7 +3,7 @@ using NUnit.Framework;
 namespace Module2.Tests
 {
     [TestFixture]
-    public class MethodsTest
+    public class NumberToolsTest
     {
         [TestCase(12, ExpectedResult = 21)]
         [TestCase(513, ExpectedResult = 531)]
@@ -15,6 +15,6 @@ namespace Module2.Tests
         [TestCase(3456432, ExpectedResult = 3462345)]
         [TestCase(10, ExpectedResult = -1)]
         [TestCase(20, ExpectedResult = -1)]
-        public int ShouldFindNextBiggerNumber(int n) => Methods.FindNextBiggerNumber(n);
+        public int ShouldFindNextBiggerNumber(int n) => NumberTools.FindNextBiggerNumber(n);
     }
 }
