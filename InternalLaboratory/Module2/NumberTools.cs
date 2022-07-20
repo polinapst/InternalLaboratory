@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,9 @@ namespace Module2
     public static class NumberTools
     {
         /// <summary>
-        /// Реализовать метод FindNextBiggerNumber, который принимает положительное целое число и возвращает ближайшее наибольшее целое, состоящее из цифр исходного числа, и null (или -1), если такого числа не существует.
+        /// Задание 5: Реализовать метод FindNextBiggerNumber, который принимает положительное целое число 
+        /// и возвращает ближайшее наибольшее целое, состоящее из цифр исходного числа, и null (или -1), 
+        /// если такого числа не существует.
         /// </summary>
         public static int FindNextBiggerNumber(int inputNumber)
         {
@@ -49,6 +52,22 @@ namespace Module2
             }
 
             return result;
+        }
+
+        /// <summary>
+        /// Задание 5: Реализовать метод FindNextBiggerNumber, который принимает положительное целое число 
+        /// и возвращает ближайшее наибольшее целое, состоящее из цифр исходного числа, и null (или -1), 
+        /// если такого числа не существует.
+        /// </summary>
+        public static int FindNextBiggerNumber(int inputNumber, out string executionTime)
+        {
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+            int methodResult = FindNextBiggerNumber(inputNumber);
+            stopwatch.Stop();
+            TimeSpan ts = stopwatch.Elapsed;
+            executionTime = ts.ToString(@"dd\.hh\:mm\:ss\:fffffff");
+            return methodResult;
         }
 
         private static char[] SortCharArrayAfterIndex(char[] inputArray, int index)
@@ -116,6 +135,48 @@ namespace Module2
             inputArray[firstElement] = temp;
 
             return inputArray;
+        }
+        /// <summary>
+        /// Задание 1: Даны два целых знаковых четырех байтовых числа и две позиции битов i и j (i<j). 
+        /// Реализовать алгоритм InsertNumber вставки битов с j-ого по i-ый бит одного числа в другое так, 
+        /// чтобы биты второго числа занимали позиции с бита j по бит i (биты нумеруются справа налево). 
+        /// Разработать модульные тесты (NUnit и(!) MS Unit Test) для тестирования метода. 
+        /// (Ниже пояснение к алгоритму).
+        /// </summary>
+        /// <param name="numberA"></param>
+        /// <param name="numberB"></param>
+        /// <param name="i"></param>
+        /// <param name="j"></param>
+        /// <returns></returns>
+        public static int InsertNumber(int numberA, int numberB, int i, int j)
+        {
+            if (i < 0)
+            {
+                throw new ArgumentException("Index cannot be less than zero", nameof(i));
+            }
+
+            if (j < 0)
+            {
+                throw new ArgumentException("Index cannot be less than zero", nameof(j));
+            }
+
+            char[] numberACharArray = Convert.ToString(numberA, 2).ToCharArray();
+            char[] numberBCharArray = Convert.ToString(numberB, 2).ToCharArray();
+            Array.Reverse(numberACharArray);
+            Array.Reverse(numberBCharArray);
+
+            char[] result = new char[Math.Max(Math.Max(numberACharArray.Length, numberBCharArray.Length), j)];
+            numberACharArray.CopyTo(result, 0);
+
+            for (int k = 0, l = i; k <= j - i && k < numberBCharArray.Length; k++, l++)
+            {
+                result[l] = numberBCharArray[k];
+            }
+
+            Array.Reverse(result);
+
+            string s = new string(result).Trim('\0');
+            return Convert.ToInt32(s, 2);
         }
     }
 }

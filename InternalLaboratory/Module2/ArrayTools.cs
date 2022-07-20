@@ -76,5 +76,41 @@ namespace Module2
 
             return -1;
         }
+
+        /// <summary>
+        /// Задание 6: Реализовать метод FilterDigit который принимает массив целых чисел и фильтрует его таким образом, 
+        /// чтобы на выходе остались только числа, содержащие заданную цифру (LINQ-запросы не использовать!) 
+        /// Например, для цифры 7, FilterDigit (7,1,2,3,4,5,6,7,68,69,70, 15,17) -> {7, 7, 70, 17}. 
+        /// Разработать модульные тесты (NUnit и MS Unit Test (включая подход DDT)) для тестирования метода.
+        /// </summary>
+        /// <param name="inputArray"></param>
+        /// <param name="filterDigit"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentException"></exception>
+        public static int[] FilterDigit(int[] inputArray, int filterDigit)
+        {
+            if (inputArray == null || inputArray.Length == 0)
+            {
+                throw new ArgumentNullException(nameof(inputArray), "Input cannot be null or empty");
+            }
+
+            if (filterDigit > 9 || filterDigit < 0)
+            {
+                throw new ArgumentException("The filter int has to be a single-digit positive number", nameof(filterDigit));
+            }
+
+            List<int> resultList = new();
+
+            foreach (int number in inputArray)
+            {
+                if (number.ToString().IndexOf(char.Parse(filterDigit.ToString())) >= 0)
+                {
+                    resultList.Add(number);
+                }
+            }
+
+            return resultList.ToArray();
+        }
     }
 }
