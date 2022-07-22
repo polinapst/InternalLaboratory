@@ -24,7 +24,7 @@ namespace Module2
         /// <summary>
         /// Задание 2: Реализовать рекурсивный алгоритм поиска максимального элемента в неотсортированном целочисленом массиве.
         /// </summary>
-        public static int FindMaxIntElement(int[] inputArray, int currentIterationIndex, int currentMaxElement)
+        private static int FindMaxIntElement(int[] inputArray, int currentIterationIndex, int currentMaxElement)
         {
             if (currentIterationIndex < inputArray.Length)
             {
@@ -40,7 +40,8 @@ namespace Module2
         }
 
         /// <summary>
-        /// Задание 3: Реализовать алгоритм поиска в вещественном массиве индекса элемента, для которого сумма элементов слева и сумма элементов спарава равны. Если такого элемента не существует вернуть null (или -1).
+        /// Задание 3: Реализовать алгоритм поиска в вещественном массиве индекса элемента, 
+        /// для которого сумма элементов слева и сумма элементов спарава равны. Если такого элемента не существует вернуть null (или -1).
         /// </summary>
         public static int FindSymmetryCenter(double[] inputArray)
         {
