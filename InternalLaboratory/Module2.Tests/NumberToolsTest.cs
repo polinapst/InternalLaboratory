@@ -58,6 +58,23 @@ namespace Module2.Tests
         [Test]
         public void ShouldThrowArgumentException_InsertNumber() =>
             Assert.Throws<ArgumentException>(() => NumberTools.InsertNumber(15, 16, -1, 0), "Index cannot be less than zero");
-        
+
+        [TestCase(15, 3, -1, 0)]
+        [TestCase(15, 3, 5, -10)]
+        [TestCase(15, 3, 50, -10)]
+        [TestCase(15, 3, 5, 32)]
+        [TestCase(15, 3, 15, 2)]
+        public void InsertNumberThrows(int numberA, int numberB, int i, int j)
+        {
+            Assert.That(() => NumberTools.InsertNumber(numberA, numberB, i, j), Throws.TypeOf<ArgumentException>());
+        }
+
+        [TestCase(8, 15, 0, 0, ExpectedResult = 9)]
+        [TestCase(8, 15, 3, 8, ExpectedResult = 120)]
+        [TestCase(15, 15, 0, 0, ExpectedResult = 15)]
+        [TestCase(1, 14, 6, 8, ExpectedResult = 385)]
+        [TestCase(1, 1, 8, 8, ExpectedResult = 257)]
+        public int ShouldReturn_InsertNumber(int numberA, int numberB, int i, int j)
+            => NumberTools.InsertNumber(numberA, numberB, i, j);
     }
 }

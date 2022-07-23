@@ -150,14 +150,19 @@ namespace Module2
         /// <returns></returns>
         public static int InsertNumber(int numberA, int numberB, int i, int j)
         {
-            if (i < 0)
+            if (i < 0 || i > 31)
             {
-                throw new ArgumentException("Index cannot be less than zero", nameof(i));
+                throw new ArgumentException("Index cannot be less than zero or bigger thatn 31", nameof(i));
             }
 
-            if (j < 0)
+            if (j < 0 || j > 31)
             {
-                throw new ArgumentException("Index cannot be less than zero", nameof(j));
+                throw new ArgumentException("Index cannot be less than zero or bigger thatn 31", nameof(j));
+            }
+
+            if (i > j)
+            {
+                throw new ArgumentException("Index i cannot be greater than index j", nameof(i));
             }
 
             char[] numberACharArray = Convert.ToString(numberA, 2).ToCharArray();
@@ -165,7 +170,7 @@ namespace Module2
             Array.Reverse(numberACharArray);
             Array.Reverse(numberBCharArray);
 
-            char[] result = new char[Math.Max(Math.Max(numberACharArray.Length, numberBCharArray.Length), j)];
+            char[] result = new char[Math.Max(Math.Max(numberACharArray.Length, numberBCharArray.Length), j + 1)];
             numberACharArray.CopyTo(result, 0);
 
             for (int k = 0, l = i; k <= j - i && k < numberBCharArray.Length; k++, l++)
@@ -175,7 +180,7 @@ namespace Module2
 
             Array.Reverse(result);
 
-            string s = new string(result).Trim('\0');
+            string s = new string(result).Trim('\0').Replace('\0', '0');
             return Convert.ToInt32(s, 2);
         }
     }
