@@ -67,7 +67,7 @@ namespace Module2
             {
                 sumToTheRightOfCurrentIndex -= inputArray[i];
 
-                if (sumToTheLeftOfCurrentIndex == sumToTheRightOfCurrentIndex)
+                if (Math.Round(sumToTheLeftOfCurrentIndex, 14) == Math.Round(sumToTheRightOfCurrentIndex, 14))
                 {
                     return i;
                 }

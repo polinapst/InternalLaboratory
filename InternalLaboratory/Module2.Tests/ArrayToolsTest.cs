@@ -28,6 +28,8 @@ namespace Module2.Tests
         [TestCase(new double[] { 111, 6, 1, 10, 0, 0, 0, 100 }, ExpectedResult = 1)]
         [TestCase(new double[] { 0 }, ExpectedResult = 0)]
         [TestCase(new double[] { 0, 0.3, 6, 0.111, 2 }, ExpectedResult = -1)]
+        [TestCase(new double[] { 0.3, 0.33, 0.333, 2, 0.963 }, ExpectedResult = 3)]
+        [TestCase(new double[] { 0.00000000000001, 0.00000000000001, 6, 0.00000000000002 }, ExpectedResult = 2)]
         public double ShouldFindSymmetryCenter_FindSymmetryCenter(double[] inputArray) => ArrayTools.FindSymmetryCenter(inputArray);
 
         [Test]
