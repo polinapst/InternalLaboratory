@@ -5,7 +5,12 @@
       "ProjectGuid": "52d3a610-bc11-4b69-be29-28e54608c385",
       "DisplayName": "Module2",
       "ColorIndex": 0
+    },
+    "ddf4adce-f403-4380-9b9d-eff954bdbe99": {
+      "ProjectGuid": "ddf4adce-f403-4380-9b9d-eff954bdbe99",
+      "DisplayName": "Module2.Tests",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
