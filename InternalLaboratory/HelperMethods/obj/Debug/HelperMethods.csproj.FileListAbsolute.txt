@@ -1,0 +1,6 @@
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\HelperMethods\bin\Debug\HelperMethods.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\HelperMethods\bin\Debug\HelperMethods.pdb
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\HelperMethods\obj\Debug\HelperMethods.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\HelperMethods\obj\Debug\HelperMethods.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\HelperMethods\obj\Debug\HelperMethods.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\HelperMethods\obj\Debug\HelperMethods.pdb

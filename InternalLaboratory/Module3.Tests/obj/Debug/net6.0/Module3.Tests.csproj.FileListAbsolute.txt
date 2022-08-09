@@ -100,3 +100,5 @@ C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module3.Tests\
 C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module3.Tests\obj\Debug\net6.0\ref\Module3.Tests.dll
 C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module3.Tests\obj\Debug\net6.0\Module3.Tests.pdb
 C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module3.Tests\obj\Debug\net6.0\Module3.Tests.genruntimeconfig.cache
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module3.Tests\bin\Debug\net6.0\HelperMethods.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module3.Tests\bin\Debug\net6.0\HelperMethods.pdb

@@ -10,7 +10,22 @@
       "ProjectGuid": "ddf4adce-f403-4380-9b9d-eff954bdbe99",
       "DisplayName": "Module2.Tests",
       "ColorIndex": 1
+    },
+    "c0da35a0-beaf-49bc-b9a0-c11cc0c26387": {
+      "ProjectGuid": "c0da35a0-beaf-49bc-b9a0-c11cc0c26387",
+      "DisplayName": "HelperMethods",
+      "ColorIndex": 2
+    },
+    "a0392abb-bb08-4100-b809-b219cbad4f38": {
+      "ProjectGuid": "a0392abb-bb08-4100-b809-b219cbad4f38",
+      "DisplayName": "Module3",
+      "ColorIndex": 3
+    },
+    "bb0116b2-d1a2-4115-bf59-4b24bc1b025c": {
+      "ProjectGuid": "bb0116b2-d1a2-4115-bf59-4b24bc1b025c",
+      "DisplayName": "Module3.Tests",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 5
 }

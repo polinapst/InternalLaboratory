@@ -1,11 +1,29 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "HelperMethods/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HelperMethods.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HelperMethods.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "HelperMethods/1.0.0": {
+      "type": "project",
+      "path": "../HelperMethods/HelperMethods.csproj",
+      "msbuildProject": "../HelperMethods/HelperMethods.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "HelperMethods >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\admin\\.nuget\\packages\\": {}
@@ -33,7 +51,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\admin\\source\\repos\\InternalLaboratory\\InternalLaboratory\\HelperMethods\\HelperMethods.csproj": {
+              "projectPath": "C:\\Users\\admin\\source\\repos\\InternalLaboratory\\InternalLaboratory\\HelperMethods\\HelperMethods.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

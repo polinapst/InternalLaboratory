@@ -4,6 +4,21 @@
     "C:\\Users\\admin\\source\\repos\\InternalLaboratory\\InternalLaboratory\\Module3\\Module3.csproj": {}
   },
   "projects": {
+    "C:\\Users\\admin\\source\\repos\\InternalLaboratory\\InternalLaboratory\\HelperMethods\\HelperMethods.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\InternalLaboratory\\InternalLaboratory\\HelperMethods\\HelperMethods.csproj",
+        "projectName": "HelperMethods",
+        "projectPath": "C:\\Users\\admin\\source\\repos\\InternalLaboratory\\InternalLaboratory\\HelperMethods\\HelperMethods.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\admin\\source\\repos\\InternalLaboratory\\InternalLaboratory\\Module3\\Module3.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +42,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\admin\\source\\repos\\InternalLaboratory\\InternalLaboratory\\HelperMethods\\HelperMethods.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\InternalLaboratory\\InternalLaboratory\\HelperMethods\\HelperMethods.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

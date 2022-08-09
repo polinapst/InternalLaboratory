@@ -10,3 +10,6 @@ C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module3\obj\De
 C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module3\obj\Debug\net6.0\Module3.dll
 C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module3\obj\Debug\net6.0\ref\Module3.dll
 C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module3\obj\Debug\net6.0\Module3.pdb
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module3\bin\Debug\net6.0\HelperMethods.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module3\bin\Debug\net6.0\HelperMethods.pdb
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module3\obj\Debug\net6.0\Module3.csproj.CopyComplete

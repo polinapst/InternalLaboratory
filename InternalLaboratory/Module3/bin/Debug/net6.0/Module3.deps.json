@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "Module3/1.0.0": {
+        "dependencies": {
+          "HelperMethods": "1.0.0"
+        },
         "runtime": {
           "Module3.dll": {}
+        }
+      },
+      "HelperMethods/1.0.0": {
+        "runtime": {
+          "HelperMethods.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Module3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HelperMethods/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

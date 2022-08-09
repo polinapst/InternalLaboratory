@@ -883,9 +883,21 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "HelperMethods/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HelperMethods.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HelperMethods.dll": {}
+        }
+      },
       "Module3/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "HelperMethods": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Module3.dll": {}
         },
@@ -3854,6 +3866,11 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "HelperMethods/1.0.0": {
+      "type": "project",
+      "path": "../HelperMethods/HelperMethods.csproj",
+      "msbuildProject": "../HelperMethods/HelperMethods.csproj"
     },
     "Module3/1.0.0": {
       "type": "project",

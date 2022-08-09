@@ -651,7 +651,15 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
+      "HelperMethods/1.0.0": {
+        "runtime": {
+          "HelperMethods.dll": {}
+        }
+      },
       "Module3/1.0.0": {
+        "dependencies": {
+          "HelperMethods": "1.0.0"
+        },
         "runtime": {
           "Module3.dll": {}
         }
@@ -985,6 +993,11 @@
       "sha512": "sha512-Mk2mKmPi0nWaoiYeotq1dgeNK1fqWh61+EK+w4Wu8SWuTYLzpUnschb59bJtGywaPq7SmTuPf44wrXRwbIrukg==",
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
+    },
+    "HelperMethods/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Module3/1.0.0": {
       "type": "project",
