@@ -77,10 +77,20 @@ namespace Module3
 
         public static int[][] BubleSortByMaxRowElementAscending(int[][] inputArray)
         {
+            if (inputArray == null || inputArray.Length == 0)
+            {
+                throw new ArgumentNullException(nameof(inputArray), "Array cannot be null or empty");
+            }
+
             int[] maxElementArray = new int[inputArray.Length];
 
             for (int i = 0; i < inputArray.Length; i++)
             {
+                if (inputArray[i] == null || inputArray[i].Length == 0)
+                {
+                    throw new ArgumentNullException(nameof(inputArray), "Rows cannot be empty");
+                }
+
                 maxElementArray[i] = FindMaxArrayElement(inputArray[i]);
             }
 
@@ -101,10 +111,20 @@ namespace Module3
 
         public static int[][] BubleSortByMaxRowElementDescending(int[][] inputArray)
         {
+            if (inputArray == null || inputArray.Length == 0)
+            {
+                throw new ArgumentNullException(nameof(inputArray), "Array cannot be null or empty");
+            }
+
             int[] maxElementArray = new int[inputArray.Length];
 
             for (int i = 0; i < inputArray.Length; i++)
             {
+                if (inputArray[i] == null || inputArray[i].Length == 0)
+                {
+                    throw new ArgumentNullException(nameof(inputArray), "Rows cannot be empty");
+                }
+
                 maxElementArray[i] = FindMaxArrayElement(inputArray[i]);
             }
 
@@ -125,10 +145,20 @@ namespace Module3
 
         public static int[][] BubleSortByMinRowElementAscending(int[][] inputArray)
         {
+            if (inputArray == null || inputArray.Length == 0)
+            {
+                throw new ArgumentNullException(nameof(inputArray), "Array cannot be null or empty");
+            }
+
             int[] minElementArray = new int[inputArray.Length];
 
             for (int i = 0; i < inputArray.Length; i++)
             {
+                if (inputArray[i] == null || inputArray[i].Length == 0)
+                {
+                    throw new ArgumentNullException(nameof(inputArray), "Rows cannot be empty");
+                }
+
                 minElementArray[i] = FindMinArrayElement(inputArray[i]);
             }
 
@@ -136,7 +166,7 @@ namespace Module3
             {
                 for (int j = 0; j < minElementArray.Length - i; j++)
                 {
-                    if (minElementArray[j] < minElementArray[j + 1])
+                    if (minElementArray[j] > minElementArray[j + 1])
                     {
                         SwapArrayElements(ref minElementArray, j, j + 1);
                         SwapArrayElements(ref inputArray, j, j + 1);
@@ -149,10 +179,20 @@ namespace Module3
 
         public static int[][] BubleSortByMinRowElementDescending(int[][] inputArray)
         {
+            if (inputArray == null || inputArray.Length == 0)
+            {
+                throw new ArgumentNullException(nameof(inputArray), "Array cannot be null or empty");
+            }
+
             int[] minElementArray = new int[inputArray.Length];
 
             for (int i = 0; i < inputArray.Length; i++)
             {
+                if (inputArray[i] == null || inputArray[i].Length == 0)
+                {
+                    throw new ArgumentNullException(nameof(inputArray), "Rows cannot be empty");
+                }
+
                 minElementArray[i] = FindMinArrayElement(inputArray[i]);
             }
 
