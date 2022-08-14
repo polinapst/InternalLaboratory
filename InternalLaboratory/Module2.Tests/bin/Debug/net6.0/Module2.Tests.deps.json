@@ -722,13 +722,27 @@
           }
         }
       },
+      "HelperMethods/1.0.0": {
+        "runtime": {
+          "HelperMethods.dll": {}
+        }
+      },
       "Module2/1.0.0": {
         "dependencies": {
+          "Module3": "1.0.0",
           "NUnit": "3.13.3",
           "NUnit3TestAdapter": "4.2.1"
         },
         "runtime": {
           "Module2.dll": {}
+        }
+      },
+      "Module3/1.0.0": {
+        "dependencies": {
+          "HelperMethods": "1.0.0"
+        },
+        "runtime": {
+          "Module3.dll": {}
         }
       },
       "Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions/14.0.0.0": {
@@ -1111,7 +1125,17 @@
       "path": "xunit.extensibility.core/2.4.1",
       "hashPath": "xunit.extensibility.core.2.4.1.nupkg.sha512"
     },
+    "HelperMethods/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Module2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Module3/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

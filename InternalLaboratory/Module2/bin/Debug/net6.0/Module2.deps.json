@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Module2/1.0.0": {
         "dependencies": {
+          "Module3": "1.0.0",
           "NUnit": "3.13.3",
           "NUnit3TestAdapter": "4.2.1"
         },
@@ -32,7 +33,20 @@
           }
         }
       },
-      "NUnit3TestAdapter/4.2.1": {}
+      "NUnit3TestAdapter/4.2.1": {},
+      "HelperMethods/1.0.0": {
+        "runtime": {
+          "HelperMethods.dll": {}
+        }
+      },
+      "Module3/1.0.0": {
+        "dependencies": {
+          "HelperMethods": "1.0.0"
+        },
+        "runtime": {
+          "Module3.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -68,6 +82,16 @@
       "sha512": "sha512-kgH8VKsrcZZgNGQXRpVCrM7TnNz9li3b/snH+YmnXUNqsaWa1Xw9EQWHpbzq4Li2FbTjTE/E5N5HdLNXzZ8BpQ==",
       "path": "nunit3testadapter/4.2.1",
       "hashPath": "nunit3testadapter.4.2.1.nupkg.sha512"
+    },
+    "HelperMethods/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Module3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

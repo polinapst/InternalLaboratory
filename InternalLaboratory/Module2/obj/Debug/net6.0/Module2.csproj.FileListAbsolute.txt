@@ -21,3 +21,7 @@ C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\De
 C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\testcentric.engine.metadata.dll
 C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\nunit.framework.dll
 C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\obj\Debug\net6.0\Module2.csproj.CopyComplete
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\HelperMethods.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\Module3.dll
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\Module3.pdb
+C:\Users\admin\source\repos\InternalLaboratory\InternalLaboratory\Module2\bin\Debug\net6.0\HelperMethods.pdb
