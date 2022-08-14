@@ -22,13 +22,11 @@ namespace Module3
 
             FillInMatrix(maxElement);
             currentMaxElement = maxElement;
-            FindMaxRowsElements();
-            FindMinRowsElements();
-            CalculateSumsOfRows();
         }
 
         public void FillInMatrix(int maxElement)
-        {            
+        {
+            currentMaxElement = maxElement;
             Random random = new();
 
             for (int i = 0; i < _rows; i++)
@@ -38,11 +36,6 @@ namespace Module3
                     matrixArray[i, j] = random.Next(maxElement + 1);
                 }
             }
-
-            currentMaxElement = maxElement;
-            FindMaxRowsElements();
-            FindMinRowsElements();
-            CalculateSumsOfRows();
         }
 
         public void PrintMatrix()
