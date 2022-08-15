@@ -16,6 +16,21 @@ namespace Module3
 
         public Matrix(int rows = 10, int columns = 10, int maxElement = 9)
         {
+            if (rows < 1)
+            {
+                throw new ArgumentException("Matrix has to have a least one row", nameof(rows));
+            }
+
+            if (columns < 1)
+            {
+                throw new ArgumentException("Matrix has to have a least one column", nameof(columns));
+            }
+
+            if (maxElement < 0)
+            {
+                throw new ArgumentException("Max element has to be positive", nameof(columns));
+            }
+
             matrixArray = new int[rows, columns];
             _rows = rows;
             _columns = columns;
@@ -140,51 +155,63 @@ namespace Module3
             }
         }
 
-        public void SortAscendingByMaxRowElement()
+        public int[,] SortAscendingByMaxRowElement()
         {
             int[] maxRowsElements = FindMaxRowsElements();
             SortAscending(maxRowsElements);
             Console.WriteLine("Sorted ascending by max row elements:");
             PrintMatrix();
+
+            return matrixArray;
         }
 
-        public void SortAscendingByMinRowElement()
+        public int[,] SortAscendingByMinRowElement()
         {
             int[] minRowsElements = FindMinRowsElements();
             SortAscending(minRowsElements);
             Console.WriteLine("Sorted ascending by min row elements:");
             PrintMatrix();
+
+            return matrixArray;
         }
 
-        public void SortAscendingByRowSums()
+        public int[,] SortAscendingByRowSums()
         {
             int[] sumsOfRows = CalculateSumsOfRows();
             SortAscending(sumsOfRows);
             Console.WriteLine("Sorted ascending by row sums:");
             PrintMatrix();
+
+            return matrixArray;
         }
 
-        public void SortDescendingByMaxRowElement()
+        public int[,] SortDescendingByMaxRowElement()
         {
             int[] maxRowsElements = FindMaxRowsElements();
             SortDescending(maxRowsElements);
             Console.WriteLine("Sorted descending by max row elements:");
             PrintMatrix();
+
+            return matrixArray;
         }
-        public void SortDescendingByMinRowElement()
+        public int[,] SortDescendingByMinRowElement()
         {
             int[] minRowsElements = FindMinRowsElements();
             SortDescending(minRowsElements);
             Console.WriteLine("Sorted descending by min row elements:");
             PrintMatrix();
+
+            return matrixArray;
         }
 
-        public void SortDescendingByRowSums()
+        public int[,] SortDescendingByRowSums()
         {
             int[] sumsOfRows = CalculateSumsOfRows();
             SortDescending(sumsOfRows);
             Console.WriteLine("Sorted descending by row sums:");
             PrintMatrix();
+
+            return matrixArray;
         }
     }
 }
